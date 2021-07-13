@@ -477,6 +477,7 @@ h4 {
   z-index: 10;
   background-color: rgb(87, 241, 87);
   width: 447px;
+	animation: popup-form 1s;
 }
 
 .message {
@@ -486,6 +487,7 @@ h4 {
   border-radius: 8px;
   flex-direction: column;
   justify-content: center;
+	animation: popup-form 1s;
 }
 
 .message-title,
@@ -506,6 +508,16 @@ h4 {
 .message-btn {
   top: 20px;
   right: 20px;
+}
+
+@keyframes popup-form {
+  0% {
+    display: block;
+		opacity: 0;
+  }
+  100% {
+    opacity: 0.9;
+  }
 }
 
 @media (max-width: 1439px) and (min-width: 1024px) {
