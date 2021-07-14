@@ -118,6 +118,10 @@ h4 {
   display: none;
 }
 
+.hidden {
+  opacity: 0;
+}
+
 .header {
   font-size: 18px;
 }
@@ -339,6 +343,10 @@ h4 {
 .input-name,
 .input-phone {
   width: 330px;
+}
+
+.input-name,
+.input-phone {
   padding: 12px 20px;
   background: #f4f4f4;
   border: 1px solid #828282;
@@ -350,8 +358,14 @@ h4 {
   outline: none;
 }
 
+.input-name:not(:focus):invalid,
+.input-phone:not(:focus):invalid {
+  border: 1px solid #828282;
+}
+
 .input-name:invalid,
-.input-phone:invalid {
+.input-phone:invalid,
+.invalid {
   border: 1px solid #eb5757;
 }
 
